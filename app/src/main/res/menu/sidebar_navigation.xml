@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/faceRegister"
+        android:title="@string/sidebar_face_register"
+        android:icon="@drawable/profile_icon"/>
+
+    <item
+        android:id="@+id/notification"
+        android:title="@string/sidebar_notification"
+        android:icon="@drawable/notification_icon"/>
+
+    <item
+        android:id="@+id/about"
+        android:title="@string/sidebar_about"
+        android:icon="@drawable/about_icon"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="@string/sidebar_logout"
+        android:icon="@drawable/logout_icon"/>
+
+</menu>

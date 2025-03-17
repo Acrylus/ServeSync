@@ -1,0 +1,71 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.servesync'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.servesync"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures{
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.firebase.crashlytics.buildtools
+    implementation libs.camera.lifecycle
+    implementation libs.litert
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation libs.core.ktx
+
+    implementation platform(libs.firebase.bom)
+
+    implementation libs.firebase.analytics
+    implementation libs.firebase.firestore
+    implementation libs.firebase.auth
+    implementation libs.firebase.storage
+    implementation libs.firebase.messaging
+
+    implementation libs.face.detection
+
+    implementation libs.camera.core
+    implementation libs.camera.view
+    implementation libs.camera.lifecycle
+    implementation libs.camera.camera2
+
+    implementation platform(libs.compose.bom)
+    implementation libs.ui
+    implementation libs.ui.tooling.preview
+    implementation libs.material3
+
+    implementation libs.guava
+}

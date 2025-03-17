@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- White Wave Background -->
+    <item android:drawable="@drawable/white_wave_background"
+        android:top="-35dp"
+        android:gravity="fill"
+        android:bottom="25dp" />
+
+    <!-- Round Logo on Top -->
+    <item android:gravity="center" android:height="35dp" android:width="35dp" android:top="-30dp" android:drawable="@drawable/round_background_logo"/>
+
+</layer-list>

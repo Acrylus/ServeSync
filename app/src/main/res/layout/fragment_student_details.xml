@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minWidth="488dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:ignore="UselessParent">
+
+        <EditText
+            android:id="@+id/courseYearField"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="@string/register_course_year"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/register_course_year"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_background"
+            android:entries="@array/gender_options" />
+
+        <EditText
+            android:id="@+id/dobPicker"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="@string/register_dob"
+            android:background="@drawable/edit_text_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:hint="@string/register_dob"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/homeAddressField"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="@string/register_home_address"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/register_home_address"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/cityAddressField"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="@string/register_city_address"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/register_city_address"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/contactNumberField"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="@string/register_contact_number"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/register_contact_number"
+            android:inputType="phone" />
+
+    </LinearLayout>
+</FrameLayout>
